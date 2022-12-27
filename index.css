@@ -9,19 +9,56 @@ body {
 	position: absolute;
 }
 
+video {
+	bottom: 150px;
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .centre {
 	/* background-color: white; */
 	width: 500px;
 	margin: auto;
 	height: 375px;
 	position: relative;
+	animation: scale-centre 0.3s ease-out 1;
+}
+
+.material-symbols-outlined {
+	color: white;
+	margin-bottom: 30px;
+	animation: bob-text 0.5s infinite alternate;
+
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 700,
+	'GRAD' 0,
+	'opsz' 48
 }
 
 .text {
 	color: white;
 	font-size: 40px;
 	text-align: center;
-	top: 20px;
+	top: 30px;
+	animation: shift-text 0.3s ease-out 0.2s 1;
+	animation-fill-mode: backwards;
+}
+
+@keyframes shift-text {
+	from {top: 70px;}
+	to {top: 30px;}
+}
+
+@keyframes scale-centre {
+	from {transform: scale(0.7);}
+	to {transform: scale(1);}
+}
+
+@keyframes bob-text {
+	from {transform: translateY(0px);}
+	to {transform: translateY(-10px);}
 }
 
 .flex {
