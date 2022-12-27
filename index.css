@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	padding: 10px;
+	padding: 0px;
 	max-width: 1100px;
 	margin: auto;
 	display: flex;
@@ -30,6 +30,12 @@ nav {
 
 ul {
 	list-style-type: none;
+	height: 100%;
+}
+
+li, nav p {
+	display: inline-block;
+	margin: 0 10px;
 }
 
 span {
@@ -39,16 +45,27 @@ span {
 header a {
 	color: white;
 	text-decoration: none;
+	transition: all 0.2s;
+}
+
+header a:hover {
+	opacity: 0.7;
+}
+
+.cta {
+	color: white;
+	text-decoration: none;
 	font-size: 13px;
 	padding: 8px 16px;
 	border-radius: 15px;
 	/* background-color: #5865F2; */
 	background-image: linear-gradient(45deg, #454FBF, #5865F2);
-	transition: all 0.2s;
+	margin: 10px;
 }
 
-header a:hover {
+.cta:hover {
 	scale: 1.05;
+	opacity: 1.0;
 }
 
 .setwidth {
