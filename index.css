@@ -2,6 +2,29 @@ body {
 	background-color: black;
 	font-family: 'Sen', Arial, Helvetica, sans-serif;
 	margin:0;
+	color: white;
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between;
+	border-bottom: 1px solid #2b2b2b;
+	backdrop-filter: blur(5px);
+	z-index: 1;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 10px 20px;
+	border-radius: 27px;
+	background-color: #5865F2;
 }
 
 .setwidth {
@@ -10,7 +33,7 @@ body {
 }
 
 video {
-	bottom: 150px;
+	bottom: 140px;
     width: 500px;
     height: 100px;
     object-fit: cover;
@@ -23,6 +46,7 @@ video {
 	height: 375px;
 	position: relative;
 	animation: scale-centre 0.3s ease-out 1;
+	text-align: left;
 }
 
 .material-symbols-outlined {
@@ -46,9 +70,26 @@ video {
 	animation-fill-mode: backwards;
 }
 
+.text2 {
+	color: rgb(142, 162, 200);
+	font-size: 20px;
+	text-align: center;
+	bottom: 20px;
+	font-weight: 100;
+	/* animation: shift-text 0.3s ease-out 0.2s 1;
+	animation-fill-mode: backwards; */
+	animation: shift-text-2 0.2s ease-out 0.5s 1;
+	animation-fill-mode: backwards;
+}
+
 @keyframes shift-text {
 	from {top: 70px;}
 	to {top: 30px;}
+}
+
+@keyframes shift-text-2 {
+	from {bottom: 40px; opacity: 0;}
+	to {bottom: 20px; opacity: 1;}
 }
 
 @keyframes scale-centre {
@@ -67,4 +108,16 @@ video {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+section {
+	height: 100vh;
+	/* center everything */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h2 {
+	font-size: 80px;
 }
