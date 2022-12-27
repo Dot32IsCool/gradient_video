@@ -24,6 +24,18 @@ header {
 	z-index: 1;
 }
 
+nav {
+	height: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+span {
+	color: rgb(142, 162, 200);
+}
+
 header a {
 	color: white;
 	text-decoration: none;
