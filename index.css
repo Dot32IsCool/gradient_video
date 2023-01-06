@@ -198,14 +198,15 @@ h2 {
 	justify-content: flex-end;
 	overflow: hidden;
 	white-space: nowrap;
-	transition: max-width 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	max-width: 3.5em;
 	/* font-size: large; */
 	margin: 3em;
 }
 
 .next-page:hover {
-	max-width: 20em;
+	max-width: 262PX;
+	opacity: 0.9;
 }
 
 a.next-page p:hover {
@@ -227,7 +228,7 @@ a.next-page p:hover {
 }
 
 a:hover .next-arrow {
-	animation: bob-text-right 0.5s infinite alternate;
+	animation: bob-text-right 0.5s infinite alternate ease-in-out;
 }
 
 @keyframes bob-text-right {
